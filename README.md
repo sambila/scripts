@@ -1,117 +1,117 @@
 # Scripts Collection
 
-Eine Sammlung nützlicher Shell-Skripte und Python-Tools für System-Administration und Datei-Management.
+A collection of useful shell scripts and Python tools for system administration and file management.
 
-## 📋 Überblick
+## 📋 Overview
 
-Dieses Repository enthält verschiedene Automatisierungs-Skripte für alltägliche administrative Aufgaben, Datei-Management und Server-Wartung.
+This repository contains various automation scripts for daily administrative tasks, file management, and server maintenance.
 
-## 🛠️ Verfügbare Skripte
+## 🛠️ Available Scripts
 
 ### System Administration
 - **`checknstartpq.py`** - PostgreSQL Service Monitor  
-  Überprüft den Status des PostgreSQL-Dienstes und startet ihn bei Bedarf neu
+  Checks PostgreSQL service status and restarts it if needed
 
 - **`sleep.sh`** - System Sleep Utility  
-  Einfaches Skript für Systemruhezustand
+  Simple script for system sleep mode
 
-### Datei-Management
-- **`move2archiv.sh`** - Automatische Archivierung  
-  Verschiebt Dateien älter als 3 Jahre in strukturierte Archiv-Ordner mit E-Mail-Benachrichtigung
+### File Management
+- **`move2archiv.sh`** - Automatic Archiving  
+  Moves files older than 3 years to structured archive folders with email notification
 
-- **`remove_pdf.sh`** - PDF Dateinamen-Bereinigung  
-  Entfernt Leerzeichen aus PDF-Dateinamen in einem angegebenen Verzeichnis
+- **`remove_pdf.sh`** - PDF Filename Cleanup  
+  Removes spaces from PDF filenames in a specified directory
 
-### Server-Utilities
-- **`copynetcup.sh`** - Sicherer Dateitransfer  
-  Überträgt Dateien zwischen Servern mit Prüfsummen-Verifikation
+### Server Utilities
+- **`copynetcup.sh`** - Secure File Transfer  
+  Transfers files between servers with checksum verification
 
-- **`geht.sh`** - Basis-Utility-Skript  
-  Allgemeines Hilfsskript für verschiedene Aufgaben
+- **`geht.sh`** - Basic Utility Script  
+  General helper script for various tasks
 
 - **`if.sh`** - Conditional Logic Helper  
-  Skript für bedingte Logik und Tests
+  Script for conditional logic and testing
 
 - **`betterorso.sh`** - System Optimization Tool  
-  Verbesserungs- und Optimierungshelfer
+  Improvement and optimization helper
 
-## 🚀 Installation & Verwendung
+## 🚀 Installation & Usage
 
-### Voraussetzungen
-- Bash Shell (für .sh Skripte)
-- Python 3.x (für .py Skripte)
-- Entsprechende Systemberechtigungen für Service-Management
+### Prerequisites
+- Bash Shell (for .sh scripts)
+- Python 3.x (for .py scripts)
+- Appropriate system permissions for service management
 
-### Verwendung
-1. Repository klonen:
+### Usage
+1. Clone the repository:
 ```bash
 git clone https://github.com/sambila/scripts.git
 cd scripts
 ```
 
-2. Skripte ausführbar machen:
+2. Make scripts executable:
 ```bash
 chmod +x *.sh
 ```
 
-3. Skripte nach Bedarf verwenden:
+3. Use scripts as needed:
 ```bash
-# PostgreSQL Status prüfen
+# Check PostgreSQL status
 python3 checknstartpq.py
 
-# Dateien archivieren
+# Archive files
 ./move2archiv.sh
 
-# PDF-Dateinamen bereinigen
+# Clean PDF filenames
 ./remove_pdf.sh
 ```
 
-## ⚙️ Konfiguration
+## ⚙️ Configuration
 
-**Wichtig:** Vor der Verwendung müssen in einigen Skripten die Pfade und Parameter angepasst werden:
+**Important:** Before use, paths and parameters must be adjusted in some scripts:
 
-- `move2archiv.sh`: Pfade und E-Mail-Adresse anpassen
-- `copynetcup.sh`: Server-Adressen und Benutzerdetails konfigurieren
+- `move2archiv.sh`: Adjust paths and email address
+- `copynetcup.sh`: Configure server addresses and user details
 
-## ⚠️ Sicherheitshinweise
+## ⚠️ Security Notes
 
-- Skripte mit administrativen Rechten sorgfältig prüfen
-- Pfade und Konfigurationen vor der Ausführung anpassen
-- Bei Server-Skripten sichere Authentifizierung verwenden
-- Backups erstellen vor Ausführung von Datei-Management-Skripten
+- Carefully review scripts with administrative privileges
+- Adjust paths and configurations before execution
+- Use secure authentication for server scripts
+- Create backups before running file management scripts
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 scripts/
 ├── checknstartpq.py    # PostgreSQL Service Monitor
-├── move2archiv.sh      # Automatische Archivierung
-├── copynetcup.sh       # Server-zu-Server Dateitransfer
-├── remove_pdf.sh       # PDF Dateinamen-Bereinigung
+├── move2archiv.sh      # Automatic Archiving
+├── copynetcup.sh       # Server-to-Server File Transfer
+├── remove_pdf.sh       # PDF Filename Cleanup
 ├── sleep.sh            # System Sleep Utility
-├── geht.sh             # Allgemeines Utility
+├── geht.sh             # General Utility
 ├── if.sh               # Conditional Logic Helper
 ├── betterorso.sh       # System Optimization
-└── README.md           # Diese Datei
+└── README.md           # This file
 ```
 
-## 🤝 Beitragen
+## 🤝 Contributing
 
-Verbesserungen und neue Skripte sind willkommen! Bitte:
-1. Fork des Repositories erstellen
-2. Feature-Branch erstellen
-3. Änderungen commiten
-4. Pull Request erstellen
+Improvements and new scripts are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Create a pull request
 
-## 📝 Lizenz
+## 📝 License
 
-Diese Skripte stehen zur freien Verfügung für persönlichen und kommerziellen Gebrauch.
+These scripts are available for free personal and commercial use.
 
-## 📞 Kontakt
+## 📞 Contact
 
-Bei Fragen oder Problemen können Sie mich über GitHub erreichen: [@sambila](https://github.com/sambila)
+For questions or issues, you can reach me via GitHub: [@sambila](https://github.com/sambila)
 
 ---
 
-*Erstellt: Februar 2021*  
-*Letztes Update: Juli 2024*
+*Created: February 2021*  
+*Last Update: July 2024*
